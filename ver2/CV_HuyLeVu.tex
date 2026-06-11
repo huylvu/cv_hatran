@@ -1,0 +1,199 @@
+% LaTeX template for (Academic) CV.
+% The template consists only of this file.
+% Document is to be structured as a normal article.
+% Created in 2017 by Pedro Tiago Martins (ptmartins.info).
+% Dedicated to the public domain.
+% Source: https://github.com/ptsgmartins/cv-LaTeX-template
+
+\documentclass[10.5pt]{article}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine} %font
+\usepackage[margin=2cm]{geometry} %margins
+\usepackage{fancyhdr} % header/footer
+\usepackage{lastpage} %last page (for footer)
+\usepackage{hyperref}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage/\pageref{LastPage}}
+
+\usepackage[usenames,dvipsnames,svgnames,x11names,table]{xcolor} % color
+\newcommand{\cvcolor}{\color{DodgerBlue4}} %easier to change color consistently
+\usepackage{doi} % easy input of doi numbers
+\usepackage{enumitem} % customized lists (reset counters with the resume option)
+\usepackage{titlesec} % customized section headers
+\usepackage{titling} % customized title
+\setlength\parindent{0em} 
+\setlength{\parskip}{0.25em}
+
+%Section Header format
+\titleformat{\section}
+{\LARGE\scshape}{}{0em}{\cvcolor}[\titlerule]
+
+\titleformat{\subsection}
+{\large\scshape}{}{0em}{\cvcolor}
+
+\titleformat{\subsubsection}
+{\bfseries}{}{0em}{}
+
+%Section header spacing
+\titlespacing{\section}
+{0em}{0.5em}{0.15em}
+
+\titlespacing{\subsection}
+{0em}{0.5em}{0.1em}
+
+\titlespacing{\subsubsection}
+{0em}{0em}{0em}
+
+\usepackage{CJKutf8}
+
+%Title
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge\theauthor}\\
+\vspace{0.5em}
+{\Large \cvcolor{Curriculum Vitae}}\\
+{\color{Gray}huymaeco@gmail.com $|$ huylvu.github.io $|$ Updated: Mar.\ 19, 2026}
+\end{center}
+}
+
+\begin{document}
+
+\title{Curriculum Vitae} % doesn't actually show up anywhere
+\author{Huy Le Vu}
+
+\maketitle
+
+%==========================================
+%========= BIO ============================
+%==========================================
+
+\section{Research Interests}
+International Trade, Development Economics, Environmental Economics
+
+%==========================================
+%========= EDUCATION ======================
+%==========================================
+
+\section{Education}
+
+\textbf{B.A.\ in International Economic}\hfill\emph{2024}\\
+Foreign Trade University (FTU) \\
+\textbf{GPA:} 3.6/4\\
+\textbf{Thesis score:} 9.6/10\\
+\textbf{Highest Thesis Score}
+
+%==========================================
+%========= Employment ======================
+%==========================================
+
+\section{Employment}
+
+\textbf{Research Assistant} \hfill \\
+Development and Policies Research Center (DEPOCEN) \hfill \emph{Mar.\ 2024 -- May\ 2026}
+
+\textbf{Coordinator} \hfill \\
+AVSE Global \hfill \emph{Oct.\ 2023 -- Oct.\ 2024}
+
+\textbf{Collaborator} \hfill \\
+Mekong Development Research Institute (MDRI) \hfill \emph{Oct.\ 2023 -- Jan.\ 2024}
+
+\textbf{Research Intern} \hfill \\
+Vietnam Institute for Economics and Policy Research (VEPR) \hfill \emph{Jun.\ 2023 -- Oct.\ 2023}
+
+\subsubsection{Selected Research Projects}
+\textbf{Development and Policies Research Center (DEPOCEN)}
+\begin{itemize}
+\item Team Member, Trade efficiency and food safety for agricultural and perishable goods --- LINC \hfill \emph{2026}
+\item Team Member, Disability Project (5 rounds) --- CRS, USAID \hfill \emph{2024--2026}
+\item Team Member, Tobacco Price Survey (round 1) --- Economics for Health \hfill \emph{2025}
+\item Team Leader, Viet Nam Multi Sector Assessment of the Typhoon Yagi Macroeconomic Impact --- UNDP \hfill \emph{2024}
+\item Team Member, Evaluating open data portals in Vietnam --- World Bank \hfill \emph{2024}
+\item Team Member, Role of Access to Finance in SME Development in Viet Nam --- ADB \hfill \emph{2024}
+\end{itemize}
+
+\textbf{Mekong Development Research Institute (MDRI)}
+\begin{itemize}
+\item Collaborator, Weather insurance for agriculture --- RWI -- Leibniz Institute for Economic Research \hfill \emph{2023}
+\end{itemize}
+
+\textbf{Association of Vietnamese Scientists and Experts (AVSE Global)}
+\begin{itemize}
+\item Team Member, Comprehensive Development Strategy of the Saigon River Corridor in Ho Chi Minh City \hfill \emph{2024}
+\item Organizing Committee, Vietnam Global Leaders Forum 2024 \hfill \emph{2024}
+\item Coordinator, The 3rd Vietnam Symposium in Supply Chain Management (VSSCM) \hfill \emph{2024}
+\item Coordinator, The 2nd Vietnam Symposium in Supply Chain Management (VSSCM) \hfill \emph{2023}
+\end{itemize}
+
+%==========================================
+%========= RESEARCH ACHIEVEMENTS ==========
+%==========================================
+
+\section{Research}
+
+\subsection{Publications}
+
+\begin{enumerate}[label={[\arabic*]}]
+\item ``Measuring the Impact of COVID-19 and Government Policy Responses on Trade Flow: The Case of ASEAN Countries'' (with Vy Tuong Phan and Viet Quoc Nguyen). \textit{Journal of Economics and Development}, 27(3): 246--263, September 2025.
+\item ``Firm performance and industrial accumulation: The role of Industrial Parks'' (with Tham Thi Hong Do and Viet Quoc Nguyen). \textit{Thailand and The World Economy}, 44(1): 216--233, January 2026.
+\end{enumerate}
+
+\subsection{Book Chapters}
+\begin{enumerate}[label={[\arabic*]}]
+\item ``A Practical Guide: Trade Policy Analysis'' (Vietnamese translation from \textit{A Practical Guide to Trade Policy Analysis}).
+\item ``Tung buoc nhap mon Nghien cuu dinh luong trong Khoa hoc xa hoi'' (Published). \href{https://iper.org.vn/tung-buoc-nhap-mon-nghien-cuu-dinh-luong-trong-khoa-hoc-xa-hoi/?fbclid=IwY2xjawHgVrpleHRuA2FlbQIxMAABHa6F89lOrPrL6ttiGWy61X8z5VlsBT-hDcrzjIUt9oHilFVG-pKhTq2CUQ_aem_buxMo8Ym0baFn8OR_dPpAw}{Link}.
+\end{enumerate}
+
+%==========================================
+%========= GRANTS =========================
+%==========================================
+
+\section{Grants \& Awards}
+
+\textbf{Third prize in student science research competition (Vietnam)}\hfill \emph{2023}
+
+\textbf{First prize in student science research competition (Foreign Trade University)}\hfill \emph{2023}
+
+\textbf{Economic field of Eur\'eka Science Prize (Vietnam)}\hfill \emph{2023}
+
+%==========================================
+%========= CONFERENCE PRESENTATIONS =======
+%==========================================
+
+\section{Conference Proceeding}
+
+\begin{enumerate}[label={[\arabic*]}]
+\item Vietnam Economist Annual Meeting (VEAM) \hfill \emph{2024}
+\item Vietnam Symposium in Supply Chain Management (VSSCM) \hfill \emph{2024}
+\item Vietnam Economist Annual Meeting (VEAM) \hfill \emph{2023}
+\item WTO-Chair International Conference: Public governance \& social innovation in the re-globalization context \hfill \emph{2023}
+\item Vietnam Symposium in Supply Chain Management (VSSCM) \hfill \emph{2023}
+\item Vietnam Economist Annual Meeting (VEAM) \hfill \emph{2022}
+\item WTO-Chair International Conference: Technological advancement and the new context for international trade and investment \hfill \emph{2022}
+\end{enumerate}
+
+\section{Leadership \& Activities}
+
+\textbf{Referee:} \textit{Thunderbird International Business Review}; \textit{Managerial and Decision Economics}
+
+\textbf{Teaching Assistant, Impact Evaluation} \hfill \emph{2023--2024}\\
+Foreign Trade University
+
+\section{Skills}
+
+\textbf{Software}: STATA (Proficient), R (Proficient), QGIS (Proficient), Python, \LaTeX\\
+\textbf{Microsoft Office}: Excel, Word\\
+\textbf{Familiar with AI/AI agents}: Codex, Antigravity, Claude Code
+
+\section{Languages}
+
+\textbf{English} (Upper Intermediate, IELTS 7.0 -- 2026), \textbf{Vietnamese} (native)
+
+\end{document}
+
+% Local Variables:
+% mode: latex
+% End:

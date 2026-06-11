@@ -1,0 +1,149 @@
+% LaTeX template for (Academic) CV.
+% The template consists only of this file.
+% Document is to be structured as a normal article.
+% Created in 2017 by Pedro Tiago Martins (ptmartins.info).
+% Dedicated to the public domain.
+% Source: https://github.com/ptsgmartins/cv-LaTeX-template
+
+\documentclass[12pt]{article}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine} %font
+\usepackage[margin=2cm]{geometry} %margins
+\usepackage{fancyhdr} % header/footer
+\usepackage{lastpage} %last page (for footer)
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage/\pageref{LastPage}}
+
+\usepackage[usenames,dvipsnames,svgnames,x11names,table]{xcolor} % color
+\newcommand{\cvcolor}{\color{DodgerBlue4}} %easier to change color consistently
+\usepackage{enumitem} % customized lists (reset counters with the resume option)
+\usepackage{titlesec} % customized section headers
+\usepackage{titling} % customized title
+\setlength\parindent{0em} 
+\setlength{\parskip}{0.5em}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,            
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black},
+    hyperfootnotes=true
+}
+
+
+%Section Header format
+\titleformat{\section}
+{\LARGE\scshape}{}{0em}{\cvcolor}[\titlerule]
+
+\titleformat{\subsection}
+{\large\scshape}{}{0em}{\cvcolor}
+
+\titleformat{\subsubsection}
+{\bfseries}{}{0em}{}
+
+%Section header spacing
+\titlespacing{\section}
+{0em}{0em}{0em}
+
+\titlespacing{\subsection}
+{0em}{0.75em}{0em}
+
+\titlespacing{\subsubsection}
+{0em}{0em}{0em}
+
+%Title
+\renewcommand{\maketitle}{
+\begin{center}
+{\Huge\theauthor}\\
+\vspace{0.5em}
+{\Large \cvcolor{Curriculum Vitae}}\\
+%{\itshape Graduate School of Economics and Management}\\
+%{\itshape 41 Kawauchi, Aoba-ku, Sendai, Miyagi, Japan 980-8576}\\
+%\vspace{0.25em}
+{\color{Gray}(last update: May 2024)}
+\end{center}
+}
+
+\begin{document}
+
+\title{Curriculum Vitae} % doesn't actually show up anywhere
+\author{Tran Hong Ha}
+
+\maketitle
+
+
+\section{Personal Info}
+\textbf{University}: Foreign Trade University (FTU) \\
+\textbf{Email}: hath2905@gmail.com \\
+\textbf{Phone}: (+84) 379 384 622 \\
+
+\section{Education}
+\textbf{B.A. in Business Japanese}, Foreign Trade University (FTU) \hfill \emph{2020 -- 2025}\\
+\textbf{GPA}: 3.4/4.0
+
+\section{Employment}
+\textbf{Logistics Intern}, TVC Transport \hfill \emph{2024}\\
+\begin{itemize}[leftmargin=*]
+  \item Supported logistics operations, order tracking, and warehouse management.
+\end{itemize}
+
+\textbf{Intern}, Grandvrio Unazuki Onsen (Toyama, Japan) \hfill \emph{Jun 2023 -- Dec 2023}\\
+\begin{itemize}[leftmargin=*]
+  \item Managed front desk operations, guest receptions, and administrative document drafting.
+  \item Provided high-standard hospitality and customer service in a Japanese professional environment.
+\end{itemize}
+
+\textbf{Japanese Teacher (N5, N4)}, Susumi Japanese Center \hfill \emph{Sep 2022 -- Feb 2023}\\
+\begin{itemize}[leftmargin=*]
+  \item Designed lesson plans and teaching materials for N5 and N4 proficiency levels.
+  \item Conducted classes and evaluated student performance through customized assignments.
+\end{itemize}
+
+\section{Publications}
+\begin{enumerate}[label={[\arabic*]}]
+  \item ``How Do Corporate Social Responsibility Messages Moderate From E-Wom And Trust To Online Purchase Intention And E-Loyalty?'', \textit{International Journal of Electronic Commerce Studies}, 2023.
+  \item ``The Moderating Role of Perceived CSR Messages on the Relationship Between E-Wom and Online Customer Trust'', \textit{Journal of Science and Technology}, 2022.
+\end{enumerate}
+
+\section{Research Interests}
+Human Resource Management, Marketing, Organizational Behavior.
+
+\section{Awards, Grants, Fellowships}
+\begin{itemize}[leftmargin=*]
+  \item Second Prize, Ministry of Education and Training Student Research Competition \hfill \emph{2023}
+  \item First Prize, University-level Student Research Competition (FTU) \hfill \emph{2022}
+  \item Third Prize, University-level Student Research Competition (FTU) \hfill \emph{2021}
+\end{itemize}
+
+\section{Professional Activities}
+\subsection{Conference Presentations \& Working Papers}
+\begin{enumerate}[label={[\arabic*]}]
+  \item Tran, H. H., \& Le, H. V. (2024). A comprehensive review of green logistics research: A bibliometric analysis. Paper presented at the 3rd Vietnam Symposium in Supply Chain Management (VSSCM 2024), Hanoi, Vietnam.
+  \item Le, H. V., Vu, T. L., \& Tran, H. H. (2023). Low-carbon development: The electric vehicle transition in Vietnam. In \textit{International Conference Abstract Proceedings: Public Governance \& Social Innovation in the Re-globalization Context} (p. 38). FTU \& Meiji University.
+  \item Tran, H. H. (2022). ``China’s Experience in Developing Green Logistics Strategy and Lessons for Vietnam'', FTU Working Paper Series.
+\end{enumerate}
+
+\section{Skills}
+\textbf{Languages}: Japanese (JLPT N1), English (Professional Working Proficiency), Vietnamese (Native).\\
+\textbf{Software}: SPSS, AMOS (Proficient), Microsoft Office Suite.
+
+\section{Social Activities \& Leadership}
+\begin{itemize}[leftmargin=*]
+  \item Class Secretary, Foreign Trade University \hfill \emph{2020 -- 2024}
+  \item Member, Global Economics Club (GEC) \& Life Skills Club (LSC) -- FTU \hfill \emph{2020 -- 2022}
+  \item Volunteer, ``Sun of Hope'' Program, Foreign Trade University \hfill \emph{2022}
+  \item Volunteer, ``Red Tet for Children'' Program, Foreign Trade University \hfill \emph{2021}
+\end{itemize}
+
+
+
+\end{document}
+
+% Local Variables:
+% mode: latex
+% End:

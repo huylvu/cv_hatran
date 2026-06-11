@@ -11,16 +11,16 @@ jobs:
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v4
       with:
-        root_file: thanhqtran_cv.tex
+        root_file: hatran_cv.tex
 
     - name: Check pdf file
-      run: file thanhqtran_cv.pdf | grep -q ' PDF '
+      run: file hatran_cv.pdf | grep -q ' PDF '
 
     - name: Upload file to repository
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       run: |
         git config --global user.name "thanhqtran"
         git config --global user.email "tranquangthanh.ftu@gmail.com"
-        git add thanhqtran_cv.pdf
+        git add hatran_cv.pdf
         git commit -m "Auto-update CV PDF"
         git push
